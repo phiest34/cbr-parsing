@@ -4,6 +4,6 @@ from . import models
 urlpatterns = [
     path('', views.index, name="home"),
     path('bank-searching/', views.search_bank),
-    path('month-searching/', models.load),
+    path('month-searching/', views.load),
     path('choice/', views.choice, name='choices')
 ]

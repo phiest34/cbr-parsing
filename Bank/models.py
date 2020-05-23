@@ -1,5 +1,5 @@
 from django.db import models
-from dbfread import DBF
+from django.http import HttpResponse
 import sys
 import csv
 
@@ -13,11 +13,11 @@ class bank_b(models.Model):
     OKATO = models.CharField(max_length=2, default='0', null=True)
     OKPO = models.CharField(max_length=8, default='0', null=True)
     OGRN = models.CharField(max_length=13, default='0', null=True)
-    REGN_S = models.CharField(max_length=3, default='0', null=True)
+    REGN_S = models.CharField(max_length=10, default='0', null=True)
     BIC = models.CharField(max_length=9, default='0', null=True)
     DT = models.CharField(max_length=10, default='0', null=True)
     NAME_B = models.CharField(max_length=60, default='0', null=True)
-    ADR = models.CharField(max_length=130, default='0', null=True)
+    ADR = models.CharField(max_length=200, default='0', null=True)
 
     def __str__(self):
         return self.NAME_B
@@ -32,14 +32,15 @@ class bank_s(models.Model):
     # chart = models.ImageField()
 
 
-def load(request):
-    tableS = DBF('E:/djangointerface/Bank/dbfiles/112019_123S.DBF', load=True, encoding="cp866")
-    tableB = DBF('E:/djangointerface/Bank/dbfiles/112019_123B.DBF', load=True, encoding="cp866")
-    bank = list()
-    for record in range(len(tableS)):
-        bank.append(bank_s.objects.get_or_create(REGN=tableS.records[record]['REGN'],
-                                                    C1_S=tableS.records[record]['C1_S'],
-                                                    C2_S=tableS.records[record]['C2_S'],
-                                                    C31_S=tableS.records[record]['C31_S'],
-                                                    C32_S=tableS.records[record]['C32_S']))
+class bank_d(models.Model):
+    # REGN = models.CharField(max_length=10, default='0', null=True)
+    # C1 = models.CharField(max_length=30, default='0', primary_key=True)
+    REGN_C1 = models.CharField(max_length=40, default='0', primary_key=True)
+    C3 = models.CharField(max_length=30, default='0', null=True)
 
+
+class bank_n(models.Model):
+    C1 = models.CharField(max_length=11, default='0', primary_key=True)
+    C2_1 = models.CharField(max_length=240, default='0', null=True)
+    C2_2 = models.CharField(max_length=240, default='0', null=True)
+    C2_3 = models.CharField(max_length=70, default='0', null=True)
