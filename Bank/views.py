@@ -33,16 +33,15 @@ def search_bank(request):
 
 def choice(request):
     results = request.GET["choices"]
-    return render(request, 'data/secondmain.html', {'choices': results})
+    return render(request, 'data/second_main.html', {'choices': results})
 
 
 def load(request):
-    report = datetime.datetime(year=2020, month=1, day=1)
+    report = datetime.datetime(year=2020, month=4, day=1)
     current_date = datetime.datetime.now()
     directory = 'Bank/archives/'
     extract = 'Bank/dbf_files/'
     extract_list = os.listdir(extract)
-    files = os.listdir(directory)
     while report.month < current_date.month:
         report = report.replace(month=report.month + 1)
         file = '123-' + str(report.year) + formatting(report.month) + '01.rar'
@@ -57,6 +56,7 @@ def load(request):
                 rf.extractall(path=extract + file)
         except:
             pass
+
     tableS = DBF('Bank/dbf_files/112019_123S.DBF', load=True, encoding="cp866")
     tableB = DBF('Bank/dbf_files/112019_123B.DBF', load=True, encoding="cp866")
     tableD = DBF('Bank/dbf_files/112019_123D.DBF', load=True, encoding="cp866")
