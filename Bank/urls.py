@@ -1,9 +1,8 @@
 from django.urls import path
 from . import views
-from . import models
 urlpatterns = [
-    path('', views.index, name="home"),
+    path('', views.index),
     path('bank-searching/', views.search_bank),
-    path('month-searching/', views.load),
+    path('home/', views.load, name='load'),
     path('choice/', views.choice, name='choices')
 ]
