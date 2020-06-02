@@ -1,0 +1,16 @@
+asgiref==3.2.5
+certifi==2019.11.28
+chardet==3.0.4
+dbfpy==2.3.1
+dbfread==2.0.7
+Django==3.0.4
+ez-setup==0.9
+idna==2.9
+mysqlclient @ file:///E:/downloads/mysqlclient-1.4.6-cp38-cp38-win32.whl
+patool==1.12
+pytz==2019.3
+rarfile==3.1
+requests==2.23.0
+sqlparse==0.3.1
+urllib3==1.25.8
+wget==3.2
