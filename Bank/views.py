@@ -1,13 +1,14 @@
 from django.shortcuts import render
+import os
+import datetime
+from datetime import timedelta
 from Bank.models import bank_s
 from Bank.models import bank_b
 from Bank.models import bank_d
 from Bank.models import banks
 from Bank.models import bank_n
-import datetime
 import rarfile
 import wget
-import os
 from dbfread import DBF
 
 
@@ -27,7 +28,7 @@ def search_bank(request):
         bank_name = banks.objects.get(name=request.GET['bank_name'])
     except:
         return render(request, 'data/bank_not_found.html', {'test': request.GET['bank_name']})
-    if (request.method == "GET") and ('bank_name' in request.GET) and (request.GET['bank_name'] == bank_name.title):
+    if (request.method == "GET") and ('bank_name' in request.GET) and (request.GET['bank_name'] == bank_name.name):
         return render(request, 'data/bank_found.html', {'test': request.GET['bank_name']})
 
 
@@ -37,30 +38,38 @@ def choice(request):
 
 
 def load(request):
-    report = datetime.datetime(year=2020, month=4, day=1)
+    report = datetime.datetime(year=2014, month=1, day=1)
     current_date = datetime.datetime.now()
+
     directory = 'Bank/archives/'
     extract = 'Bank/dbf_files/'
+    url = 'http://cbr.ru/vfs/credit/forms/'
+
     extract_list = os.listdir(extract)
-    while report.month < current_date.month:
-        report = report.replace(month=report.month + 1)
+    directory_list = os.listdir(directory)
+
+    while current_date - report > timedelta(hours=1):
+        report += timedelta(days=28)
         file = '123-' + str(report.year) + formatting(report.month) + '01.rar'
         try:
-            filename = wget.download('http://old.cbr.ru/vfs/credit/forms/' + file)
-            os.rename(filename, u'' + os.getcwd() + '/Bank/archives/' + filename)
+            if file not in directory_list:
+                filename = wget.download(url + file)
+                os.rename(filename, u'' + os.getcwd() + '/Bank/archives/' + filename)
+
             if file not in extract_list:
                 rf = rarfile.RarFile(directory + file)
                 rf.PATH_SEP = '/'
                 path = os.path.join(extract, file)
                 os.mkdir(path)
                 rf.extractall(path=extract + file)
-        except:
+        except Exception:
             pass
 
     tableS = DBF('Bank/dbf_files/112019_123S.DBF', load=True, encoding="cp866")
     tableB = DBF('Bank/dbf_files/112019_123B.DBF', load=True, encoding="cp866")
     tableD = DBF('Bank/dbf_files/112019_123D.DBF', load=True, encoding="cp866")
     tableN = DBF('Bank/dbf_files/112019_123N.DBF', load=True, encoding="cp866")
+
     if bank_s.objects.count() != len(tableN):
         for record in range(len(tableS)):
             bank_s.objects.get_or_create(REGN=tableS.records[record]['REGN'],
