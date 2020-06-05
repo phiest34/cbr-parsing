@@ -2,354 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67e2d1df-c5cc-4d06-941c-cff946ebb26e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/djangoInterface/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20140201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20140301.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20140401.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20140501.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20140601.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20140701.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20140801.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20140901.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20141001.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20141101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20141201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20150101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20150201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20150301.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20150401.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20150501.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20150601.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20150701.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20150801.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20150901.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20151001.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20151101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20151201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20160101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20160201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20160301.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20160401.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20160501.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20160601.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20160701.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20160801.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20160901.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20161001.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20161101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20161201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20170101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20170201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20170301.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20170401.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20170501.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20170601.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20170701.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20170801.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20170901.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20171001.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20171101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20171201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20180101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20180201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20180301.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20180401.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20180501.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20180601.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20180701.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20180801.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20180901.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20181001.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20181101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20181201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20190101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20190201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20190301.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20190401.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20190501.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20190601.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20190701.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20190801.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20190901.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20191001.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20191101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20191201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20200101.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20200201.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20200301.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/archives/123-20200401.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140201.rar/012014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140201.rar/012014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140201.rar/012014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140301.rar/022014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140301.rar/022014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140301.rar/022014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140401.rar/032014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140401.rar/032014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140401.rar/032014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140501.rar/042014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140501.rar/042014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140501.rar/042014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140601.rar/052014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140601.rar/052014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140601.rar/052014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140701.rar/062014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140701.rar/062014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140701.rar/062014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140801.rar/072014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140801.rar/072014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140801.rar/072014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140901.rar/082014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140901.rar/082014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20140901.rar/082014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20141001.rar/092014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20141001.rar/092014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20141001.rar/092014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20141101.rar/102014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20141101.rar/102014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20141101.rar/102014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20141201.rar/112014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20141201.rar/112014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20141201.rar/112014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150101.rar/122014_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150101.rar/122014_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150101.rar/122014_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150201.rar/012015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150201.rar/012015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150201.rar/012015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150301.rar/022015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150301.rar/022015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150301.rar/022015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150401.rar/032015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150401.rar/032015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150401.rar/032015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150501.rar/042015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150501.rar/042015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150501.rar/042015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150601.rar/052015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150601.rar/052015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150601.rar/052015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150701.rar/062015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150701.rar/062015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150701.rar/062015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150801.rar/072015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150801.rar/072015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150801.rar/072015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150901.rar/082015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150901.rar/082015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20150901.rar/082015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20151001.rar/092015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20151001.rar/092015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20151001.rar/092015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20151101.rar/102015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20151101.rar/102015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20151101.rar/102015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20151201.rar/112015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20151201.rar/112015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20151201.rar/112015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160101.rar/122015_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160101.rar/122015_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160101.rar/122015_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160201.rar/012016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160201.rar/012016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160201.rar/012016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160201.rar/012016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160301.rar/022016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160301.rar/022016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160301.rar/022016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160301.rar/022016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160401.rar/032016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160401.rar/032016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160401.rar/032016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160401.rar/032016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160501.rar/042016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160501.rar/042016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160501.rar/042016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160501.rar/042016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160601.rar/052016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160601.rar/052016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160601.rar/052016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160601.rar/052016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160701.rar/062016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160701.rar/062016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160701.rar/062016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160701.rar/062016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160801.rar/072016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160801.rar/072016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160801.rar/072016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160801.rar/072016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160901.rar/082016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160901.rar/082016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160901.rar/082016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20160901.rar/082016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161001.rar/092016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161001.rar/092016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161001.rar/092016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161001.rar/092016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161101.rar/102016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161101.rar/102016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161101.rar/102016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161101.rar/102016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161201.rar/112016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161201.rar/112016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161201.rar/112016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20161201.rar/112016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170101.rar/122016_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170101.rar/122016_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170101.rar/122016_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170101.rar/122016_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170201.rar/012017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170201.rar/012017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170201.rar/012017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170201.rar/012017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170301.rar/022017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170301.rar/022017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170301.rar/022017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170301.rar/022017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170401.rar/032017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170401.rar/032017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170401.rar/032017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170401.rar/032017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170501.rar/042017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170501.rar/042017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170501.rar/042017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170501.rar/042017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170601.rar/052017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170601.rar/052017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170601.rar/052017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170601.rar/052017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170701.rar/062017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170701.rar/062017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170701.rar/062017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170701.rar/062017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170801.rar/072017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170801.rar/072017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170801.rar/072017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170801.rar/072017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170901.rar/082017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170901.rar/082017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170901.rar/082017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20170901.rar/082017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171001.rar/092017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171001.rar/092017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171001.rar/092017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171001.rar/092017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171101.rar/102017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171101.rar/102017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171101.rar/102017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171101.rar/102017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171201.rar/112017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171201.rar/112017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171201.rar/112017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20171201.rar/112017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180101.rar/122017_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180101.rar/122017_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180101.rar/122017_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180101.rar/122017_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180201.rar/012018_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180201.rar/012018_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180201.rar/012018_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180201.rar/012018_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180301.rar/022018_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180301.rar/022018_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180301.rar/022018_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180301.rar/022018_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180501.rar/042018_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180501.rar/042018_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180501.rar/042018_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180501.rar/042018_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180601.rar/052018_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180601.rar/052018_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180601.rar/052018_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180601.rar/052018_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180701.rar/062018_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180701.rar/062018_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180701.rar/062018_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180701.rar/062018_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180801.rar/072018_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180801.rar/072018_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180801.rar/072018_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180801.rar/072018_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180901.rar/082018_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180901.rar/082018_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180901.rar/082018_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20180901.rar/082018_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181001.rar/092018_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181001.rar/092018_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181001.rar/092018_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181001.rar/092018_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181101.rar/102018_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181101.rar/102018_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181101.rar/102018_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181101.rar/102018_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181201.rar/112018_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181201.rar/112018_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181201.rar/112018_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20181201.rar/112018_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190101.rar/122018_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190101.rar/122018_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190101.rar/122018_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190101.rar/122018_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190201.rar/012019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190201.rar/012019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190201.rar/012019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190201.rar/012019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190301.rar/022019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190301.rar/022019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190301.rar/022019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190301.rar/022019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190401.rar/032019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190401.rar/032019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190401.rar/032019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190401.rar/032019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190501.rar/042019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190501.rar/042019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190501.rar/042019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190501.rar/042019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190601.rar/052019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190601.rar/052019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190601.rar/052019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190601.rar/052019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190701.rar/062019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190701.rar/062019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190701.rar/062019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190701.rar/062019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190801.rar/072019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190801.rar/072019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190801.rar/072019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190801.rar/072019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190901.rar/082019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190901.rar/082019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190901.rar/082019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20190901.rar/082019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191001.rar/092019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191001.rar/092019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191001.rar/092019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191001.rar/092019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191101.rar/102019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191101.rar/102019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191101.rar/102019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191101.rar/102019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191201.rar/112019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191201.rar/112019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191201.rar/112019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20191201.rar/112019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200101.rar/122019_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200101.rar/122019_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200101.rar/122019_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200101.rar/122019_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200201.rar/012020_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200201.rar/012020_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200201.rar/012020_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200201.rar/012020_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200301.rar/022020_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200301.rar/022020_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200301.rar/022020_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200301.rar/022020_123S.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200401.rar/032020_123B.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200401.rar/032020_123D.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200401.rar/032020_123N.DBF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/dbf_files/123-20200401.rar/032020_123S.DBF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangointerface/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangointerface/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoInterface/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangointerface/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoInterface/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangointerface/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoInterface/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangointerface/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoInterface/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,9 +43,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -413,15 +75,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\djangoInterface\Bank\templates\data\includes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\djangoInterface\Bank\templates\data" />
       <recent name="E:\djangoInterface\Bank\templates\data\includes" />
       <recent name="E:\djangoInterface\Bank\templates" />
       <recent name="E:\djangoInterface\Bank\templates\includes" />
       <recent name="E:\djangoInterface\Bank" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\djangoInterface\Bank\templates\data\includes" />
     </key>
   </component>
   <component name="RunManager">
@@ -627,28 +289,28 @@
     </state>
     <state x="2425" y="101" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591124819832" />
     <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585058700864" />
-    <state width="1237" height="158" key="GridCell.Tab.0.bottom" timestamp="1591130954020">
+    <state width="1237" height="64" key="GridCell.Tab.0.bottom" timestamp="1591383015333">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="158" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591130954020" />
+    <state width="1237" height="64" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591383015333" />
     <state width="1493" height="158" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591128865143" />
     <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1237" height="158" key="GridCell.Tab.0.center" timestamp="1591130954020">
+    <state width="1237" height="64" key="GridCell.Tab.0.center" timestamp="1591383015332">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="158" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591130954020" />
+    <state width="1237" height="64" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591383015332" />
     <state width="1493" height="158" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591128865142" />
     <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1237" height="158" key="GridCell.Tab.0.left" timestamp="1591130954020">
+    <state width="1237" height="64" key="GridCell.Tab.0.left" timestamp="1591383015332">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="158" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591130954020" />
+    <state width="1237" height="64" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591383015332" />
     <state width="1493" height="158" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591128865142" />
     <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1237" height="158" key="GridCell.Tab.0.right" timestamp="1591130954020">
+    <state width="1237" height="64" key="GridCell.Tab.0.right" timestamp="1591383015333">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="158" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591130954020" />
+    <state width="1237" height="64" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591383015333" />
     <state width="1493" height="158" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591128865143" />
     <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
     <state width="1492" height="265" key="GridCell.Tab.1.bottom" timestamp="1590246704680">
