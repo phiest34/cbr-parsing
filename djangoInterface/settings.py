@@ -25,7 +25,7 @@ SECRET_KEY = '03l=rti=@m4&$p8h^npq!n_o)u%%)qik#j61#9!&w538h82_r3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.2']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -119,11 +119,14 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
 
-DATA_UPLOAD_MAX_NUMBER_FIELDS = 50000000000000
-DATA_UPLOAD_MAX_MEMORY_SIZE = 10000000000000
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "Work/Graphics/"),
+]
+
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 50000000
+DATA_UPLOAD_MAX_MEMORY_SIZE = 100000000

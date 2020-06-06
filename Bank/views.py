@@ -1,8 +1,7 @@
 from django.shortcuts import render
-import os
 import datetime
 from datetime import timedelta
-from Bank.utils import *
+from Bank.scripts import *
 from Bank.models import *
 
 import rarfile
@@ -14,13 +13,21 @@ def index(request):
     return render(request, 'data/main.html')
 
 
+def get_graph(request):
+    bank = values.pop()
+    col = request.GET['col']
+    key = get_key(decoding, col)
+    return render(request, 'data/graph.html', {'key': key}, {'bank': int(bank)})
+
+
 def search_bank(request):
     try:
         bank_name = banks.objects.get(name=request.GET['bank_name'])
     except:
-        return render(request, 'data/bank_not_found.html', {'test': request.GET['bank_name']})
+        return render(request, 'data/bank_not_found.html', {'bank': request.GET['bank_name']})
     if (request.method == "GET") and ('bank_name' in request.GET) and (request.GET['bank_name'] == bank_name.name):
-        return render(request, 'data/bank_found.html', {'test': request.GET['bank_name']})
+        values.append(request.GET.get('bank_name', '1'))
+        return render(request, 'data/bank_found.html', {'bank': request.GET['bank_name']})
 
 
 def choice(request):
@@ -28,6 +35,7 @@ def choice(request):
     return render(request, 'data/second_main.html', {'choices': results})
 
 
+# лучше не надо, не открывай
 def load(request):
     report = datetime.datetime(year=2014, month=1, day=1)
     current_date = datetime.datetime.now()
@@ -56,7 +64,6 @@ def load(request):
 
         except Exception:
             pass
-
 
     tableB = DBF('Bank/dbf_files/123-20140201.rar/012014_123B.DBF', load=True, encoding="cp866")
     tableD = DBF('Bank/dbf_files/123-20140201.rar/012014_123D.DBF', load=True, encoding="cp866")
@@ -490,11 +497,9 @@ def load(request):
                                                C2_2=tableN.records[record]['C2_2'],
                                                C2_3=tableN.records[record]['C2_3'])
 
-
-
     ###########################################################################
     ###########################################################################
-                                  #2015.02.01#
+    # 2015.02.01#
     ###########################################################################
     ###########################################################################
 
@@ -623,7 +628,6 @@ def load(request):
                 C31_S=tableS.records[record]['C31_S'],
                 C32_S=tableS.records[record]['C32_S'],
             )
-
 
     ###########################################################################
 
@@ -960,5 +964,5 @@ def load(request):
                 C31_S=tableS.records[record]['C31_S'],
                 C32_S=tableS.records[record]['C32_S'],
             )
-
+    # я предупреждал...
     return render(request, 'data/main.html')

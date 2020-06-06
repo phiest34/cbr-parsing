@@ -4,6 +4,13 @@ from dbfread import DBF
 import glob
 import os
 
+decoding = {'C3': 'Суммарный капитал', 'C1_S': 'Объем акций отчужденных по сделкам',
+            'C2_S': 'Объем акций приобретенных по сделкам',
+            'C31_S': 'Финансовый результат по операциям, реализованный, тыс.руб', 'C32_S':
+                'Финансовый результат по операциям, нереализованный, тыс.руб'}
+
+values = []
+
 
 def formatting(month):
     if int(month) >= 10:
@@ -12,14 +19,16 @@ def formatting(month):
         return '0' + str(month)
 
 
+def get_key(dic, value):
+    for key, v in dic.items():
+        if v == value:
+            return key
+
+
 def get_graph(regn: int, col: str):
     extract = 'Bank/dbf_files/'
     x_axis = []
     y_axis = []
-    decoding = {'C3': 'Суммарный капитал', 'C1_S': 'Объем акций отчужденных по сделкам',
-                'C2_S': 'Объем акций приобретенных по сделкам',
-                'C31_S': 'Финансовый результат по операциям, реализованный, тыс.руб', 'C32_S':
-                    'Финансовый результат по операциям, нереализованный, тыс.руб'}
 
     for file in glob.glob(extract + '*.rar'):
         dbfs = glob.glob(file + '/*.DBF')

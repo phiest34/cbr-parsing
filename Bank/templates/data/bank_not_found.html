@@ -1,16 +1,19 @@
 {% extends "data/index.html" %}
 {% block content %}
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.6">
+    <html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v3.8.6">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
 
-    <!-- Bootstrap core CSS -->
-<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Bootstrap core CSS -->
+        <link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+              crossorigin="anonymous">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -41,29 +44,30 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
+    </head>
+    <body class="text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-    </div>
-  </header>
+        <header class="masthead mb-auto">
+            <div class="inner">
+            </div>
+        </header>
 
-  <main role="main" class="inner cover">
-    <h1 class="cover-heading">Произошла ошибка.</h1>
-    <p class="lead">К сожалению, что-то пошло не так, банк под названием "{{ test }}" не был найден в базе :( Проверьте введенные данные и повторите попытку. </p>
-    <p class="lead">
-      <a href="{% url 'home' %}" class="btn btn-lg btn-secondary">Вернуться назад.</a>
-    </p>
-  </main>
+        <main role="main" class="inner cover">
+            <h1 class="cover-heading">Произошла ошибка.</h1>
+            <p class="lead">К сожалению, что-то пошло не так, банк под названием "{{ bank }}" не был найден в базе :(
+                Проверьте введенные данные и повторите попытку. </p>
+            <p class="lead">
+                <a href="{% url 'home' %}" class="btn btn-lg btn-secondary">Вернуться назад.</a>
+            </p>
+        </main>
 
-  <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p>ИП 2020.</p>
-    </div>
-  </footer>
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>ИП 2020.</p>
+            </div>
+        </footer>
 </div>
 
-<p>{{ test }} {{ test }}</p>
-</body></html>
+
+    </body></html>
 {% endblock %}

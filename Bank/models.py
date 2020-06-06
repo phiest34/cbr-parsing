@@ -8,7 +8,7 @@ class banks(models.Model):
     name = models.CharField(max_length=10, default='none')
 
     def __str__(self):
-        return self.NAME_B
+        return self.name
 
 
 ###################################################################

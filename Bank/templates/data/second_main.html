@@ -33,23 +33,28 @@
                 </svg>
                 Вид
             </h1>
-            {% csrf_token %}
-            <select name="choice" class="custom-select mar">
-                <option selected="">Выберите вид</option>
-                <option value="1">По месяцам</option>
-                <option value="2">По банкам</option>
-            </select>
-            <div class="mar">&NonBreakingSpace;</div>
-            <div class="col-0"><input type="submit" value="Подтвердить" href="#" class="btn btn-lg btn-secondary"></div>
-            {% if choices == 'По месяцам' %}
-               <div class="col-0" offset-0 style=”margin-left:20px">
-                    {% include 'data/includes/firstoption.html' %}
+            <form action="{% url 'choices' %}" method="GET">
+                {% csrf_token %}
+                <select name="choices" class="custom-select mar">
+                    <option selected="">Выберите вид</option>
+                    <option>Графический</option>
+                    <option>Текстовый</option>
+                </select>
+
+                <div class="mar">&NonBreakingSpace;</div>
+                <div class="col-0"><input type="submit" value="Подтвердить" class="btn btn btn-secondary"></div>
+            </form>
+
+            {% if choices == 'Текстовый' %}
+                <div class="col-0" offset-0 style=”margin-left:20px">
+                    {% include 'data/includes/text_report.html' %}
                 </div> </row>
             {% endif %}
-            {% if choices == 'По банкам' %}
-                <row>  <div class="col-0" offset-0 style=”margin-left:20px">
-                {% include 'data/includes/secondoption.html' %}
-                </div>
+            {% if choices == 'Графический' %}
+                <row>
+                    <div class="col-0" offset-0 style=”margin-left:20px">
+                        {% include 'data/includes/make_graph.html' %}
+                    </div>
                 </row>
             {% endif %}
             <div class="mar">&NonBreakingSpace;</div>
