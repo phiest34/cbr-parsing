@@ -3,7 +3,6 @@ import datetime
 from datetime import timedelta
 from Bank.scripts import *
 from Bank.models import *
-
 import rarfile
 import wget
 from dbfread import DBF
@@ -13,26 +12,25 @@ def index(request):
     return render(request, 'data/main.html')
 
 
-def get_graph(request):
-    bank = values.pop()
+def graph(request):
+    bank = request.GET.get()
     col = request.GET['col']
     key = get_key(decoding, col)
-    return render(request, 'data/graph.html', {'key': key}, {'bank': int(bank)})
+    return render(request, 'data/graph.html', {'regn': bank, 'key': key})
 
 
 def search_bank(request):
     try:
         bank_name = banks.objects.get(name=request.GET['bank_name'])
-    except:
+        if (request.method == "GET") and ('bank_name' in request.GET) and (request.GET['bank_name'] == bank_name.name):
+            return render(request, 'data/second_main.html', {'bank': str(request.GET['bank_name'])})
+    except Exception:
         return render(request, 'data/bank_not_found.html', {'bank': request.GET['bank_name']})
-    if (request.method == "GET") and ('bank_name' in request.GET) and (request.GET['bank_name'] == bank_name.name):
-        values.append(request.GET.get('bank_name', '1'))
-        return render(request, 'data/bank_found.html', {'bank': request.GET['bank_name']})
 
 
 def choice(request):
     results = request.GET["choices"]
-    return render(request, 'data/second_main.html', {'choices': results})
+    return render(request, 'data/second_main.html', {'choices': results, 'bank': ''})
 
 
 # лучше не надо, не открывай

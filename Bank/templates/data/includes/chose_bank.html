@@ -10,15 +10,17 @@
     </svg>
     График
 </h1>
-<form action="bank-searching/" method="get">
+<form action="{% url 'search' %}" method="get">
     <input class="form-control form-control-dark w-100" type="text" name="bank_name" id="name"
            placeholder="Введите регистрационный номер банка"
            aria-label="Search">
     <div class="mar">&NonBreakingSpace;</div>
     <div class="row">
-        <div class="col-sm cell1"><input type="submit" value="Построить график"
+        <div class="col-sm cell1"><input type="submit" value="Найти банк >> "
                                          class="btn btn-outline-secondary" href="#"></div>
     </div>
     </div>
 </form>
-
+{% if bank != '' %}
+    {% include 'data/includes/chose_column.html' %}
+{% endif %}

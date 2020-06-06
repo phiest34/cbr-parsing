@@ -1,15 +1,17 @@
+import time
+
 import matplotlib.pyplot as plt
 from djangoInterface.settings import BASE_DIR
 from dbfread import DBF
 import glob
 import os
 
-decoding = {'C3': 'Суммарный капитал', 'C1_S': 'Объем акций отчужденных по сделкам',
+decoding = {'000': 'Суммарный капитал', 'C1_S': 'Объем акций отчужденных по сделкам',
             'C2_S': 'Объем акций приобретенных по сделкам',
             'C31_S': 'Финансовый результат по операциям, реализованный, тыс.руб', 'C32_S':
                 'Финансовый результат по операциям, нереализованный, тыс.руб'}
 
-values = []
+regns = [0]
 
 
 def formatting(month):
@@ -26,31 +28,59 @@ def get_key(dic, value):
 
 
 def get_graph(regn: int, col: str):
+    start_time = time.time()
     extract = 'Bank/dbf_files/'
     x_axis = []
     y_axis = []
 
+    similar = set()
+    regns = {}
+    values = set()
+    similar.clear()
+    bank = input()
+    bank.lower()
+    regns.clear()
+    values.clear()
     for file in glob.glob(extract + '*.rar'):
         dbfs = glob.glob(file + '/*.DBF')
         for dbf in dbfs:
-            if dbf[-5] == 'D' and col != 'C3' or dbf[-5] != 'D' and dbf[-5] != 'B' and col == 'C3':
+            if dbf[-5] != 'B':
+                continue
+            else:
+                table = DBF(dbf, load=True, encoding='cp866')
+                for record in table:
+                    if record['NAME_B'].lower().find(bank) != -1:
+                        similar.add(record['NAME_B'].lower())
+                        print(record['REGN'])
+                        regns[record['NAME_B'].lower()] = record['REGN']
+                        values.add(record['REGN'])
+
+        print(*similar)
+    if len(values) == 1:
+        for m in similar:
+            regn = regns.get(m)
+            print('достали банк ', m, regn)
+    else:
+        return False
+
+    bTable = {'C1_S', 'C2_S', 'C31_S', 'C32_S'}
+    for file in glob.glob(extract + '*.rar'):
+        dbfs = glob.glob(file + '/*.DBF')
+        for dbf in dbfs:
+            if dbf[-5] == 'D' and col in bTable or dbf[-5] != 'D' and dbf[-5] != 'B' and col not in bTable:
                 continue
 
-            elif col == 'C3':
+            elif col not in bTable:
                 table = DBF(dbf, load=True, encoding='cp866')
                 found = False
+                loop = time.time()
                 for record in table:
                     if found or dbf[-5] != 'D':
                         break
-                    try:
-                        if record['REGN'] == regn and record['C1'] == '000':
-                            try:
-                                y_axis.append(record[col])
-                                found = True
-                            except Exception:
-                                pass
-                    except Exception:
-                        pass
+                    if record['REGN'] == regn and record['C1'] == col:
+                        print('вошел')
+                        y_axis.append(record['C3'])
+                        print('положил', len(y_axis))
                 if dbf[-5] == 'D':
                     continue
                 for record in table:
@@ -82,9 +112,13 @@ def get_graph(regn: int, col: str):
 
     print(len(x_axis))
     print(len(y_axis))
-    plt.title(decoding[col])
+    if col in decoding:
+        plt.title(decoding[col])
+    else:
+        plt.title(col)
     plt.grid()
     min_sl = min(len(x_axis), len(y_axis))
     plt.plot(x_axis[:min_sl], y_axis[:min_sl])
-    plt.savefig(os.path.join(BASE_DIR, '/Work/Graphics/' + col + "_" + str(regn) + ".png"))
+    plt.savefig(os.getcwd() + "/Work/Graphics/" + col + "_" + str(regn) + ".png")
     plt.show()
+    return True

@@ -50,13 +50,16 @@
                     {% include 'data/includes/text_report.html' %}
                 </div> </row>
             {% endif %}
-            {% if choices == 'Графический' %}
+            {% if choices == 'Графический' or bank != '' %}
                 <row>
-                    <div class="col-0" offset-0 style=”margin-left:20px">
-                        {% include 'data/includes/make_graph.html' %}
-                    </div>
-                </row>
+                <div class="col-0" offset-0 style=”margin-left:20px">
+                    {% include 'data/includes/chose_bank.html' %}
+                </div>
+
+
             {% endif %}
+
+            </row>
             <div class="mar">&NonBreakingSpace;</div>
         </div>
 
@@ -64,8 +67,9 @@
         <footer class="text-muted">
             <div class="container">
                 <p class="float-right">
-                    <a href="#">Наверх</a>
+
                 </p>
+
                 <br>
                 <p style="margin-left: 50%;">ИП 2020.</p></br>
             </div>
