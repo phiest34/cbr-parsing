@@ -1,17 +1,14 @@
-import time
-
-import matplotlib.pyplot as plt
 from djangoInterface.settings import BASE_DIR
-from dbfread import DBF
+import time
 import glob
 import os
+import matplotlib.pyplot as plt
+from dbfread import DBF
 
 decoding = {'000': 'Суммарный капитал', 'C1_S': 'Объем акций отчужденных по сделкам',
             'C2_S': 'Объем акций приобретенных по сделкам',
             'C31_S': 'Финансовый результат по операциям, реализованный, тыс.руб', 'C32_S':
                 'Финансовый результат по операциям, нереализованный, тыс.руб'}
-
-regns = [0]
 
 
 def formatting(month):
@@ -27,20 +24,18 @@ def get_key(dic, value):
             return key
 
 
-def get_graph(regn: int, col: str):
-    start_time = time.time()
+def get_graph(bank: str, col: str):
     extract = 'Bank/dbf_files/'
     x_axis = []
     y_axis = []
-
     similar = set()
     regns = {}
     values = set()
     similar.clear()
-    bank = input()
     bank.lower()
     regns.clear()
     values.clear()
+    regn = get_key(get_dict(), bank)
     for file in glob.glob(extract + '*.rar'):
         dbfs = glob.glob(file + '/*.DBF')
         for dbf in dbfs:
@@ -51,15 +46,11 @@ def get_graph(regn: int, col: str):
                 for record in table:
                     if record['NAME_B'].lower().find(bank) != -1:
                         similar.add(record['NAME_B'].lower())
-                        print(record['REGN'])
                         regns[record['NAME_B'].lower()] = record['REGN']
                         values.add(record['REGN'])
-
-        print(*similar)
     if len(values) == 1:
         for m in similar:
             regn = regns.get(m)
-            print('достали банк ', m, regn)
     else:
         return False
 
@@ -73,7 +64,6 @@ def get_graph(regn: int, col: str):
             elif col not in bTable:
                 table = DBF(dbf, load=True, encoding='cp866')
                 found = False
-                loop = time.time()
                 for record in table:
                     if found or dbf[-5] != 'D':
                         break
@@ -109,9 +99,6 @@ def get_graph(regn: int, col: str):
 
                     except Exception:
                         pass
-
-    print(len(x_axis))
-    print(len(y_axis))
     if col in decoding:
         plt.title(decoding[col])
     else:
@@ -119,6 +106,20 @@ def get_graph(regn: int, col: str):
     plt.grid()
     min_sl = min(len(x_axis), len(y_axis))
     plt.plot(x_axis[:min_sl], y_axis[:min_sl])
-    plt.savefig(os.getcwd() + "/Work/Graphics/" + col + "_" + str(regn) + ".png")
+    plt.xlabel(bank)
+    plt.savefig(os.path.join(BASE_DIR + "/Work/Graphics/" + col + "_" + str(regn) + ".png"))
     plt.show()
     return True
+
+
+def get_dict():
+    extract = 'Bank/dbf_files/'
+    dick = {}
+    for file in glob.glob(extract + '*.rar'):
+        dbfs = glob.glob(file + '/*.DBF')
+        for dbf in dbfs:
+            if dbf[-5] == 'B':
+                table = DBF(dbf, encoding='cp866', load=True)
+                for record in table:
+                    dick[record['REGN']] = record['NAME_B']
+    return dick

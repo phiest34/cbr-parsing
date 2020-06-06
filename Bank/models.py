@@ -5,7 +5,7 @@ import csv
 
 
 class banks(models.Model):
-    name = models.CharField(max_length=10, default='none')
+    name = models.CharField(max_length=110, default='none')
 
     def __str__(self):
         return self.name
@@ -16,6 +16,12 @@ class banks(models.Model):
 ###################################################################
 ###################################################################
 ###################################################################
+
+class forms(models.Model):
+    data = models.CharField(max_length=100, default='0', null=True)
+
+    def __str__(self):
+        return self.data
 
 
 class bank012014_b(models.Model):
@@ -2473,7 +2479,6 @@ class bank052020_n(models.Model):
     C2_1 = models.CharField(max_length=240, default='0', null=True)
     C2_2 = models.CharField(max_length=240, default='0', null=True)
     C2_3 = models.CharField(max_length=70, default='0', null=True)
-
 
 
 class bank_s(models.Model):

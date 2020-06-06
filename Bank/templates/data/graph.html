@@ -1,5 +1,6 @@
 {% extends "data/index.html" %}
 {% block content %}
+    {% load static %}
     <form action="{% url 'graph' %}" method="GET">
         {% csrf_token %}
         <div class="col-sm-auto">
@@ -20,6 +21,8 @@
         </div>
     </form>
     <div>
-        <h1>{{ regn }} {{ key }}</h1>
+    </div>
+    <div>
+        <img alt="The line graph" src="{% static file_name %}"/>
     </div>
 {% endblock %}

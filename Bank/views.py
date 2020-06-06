@@ -13,16 +13,22 @@ def index(request):
 
 
 def graph(request):
-    bank = request.GET.get()
+    bank = forms.objects.last().data
     col = request.GET['col']
     key = get_key(decoding, col)
-    return render(request, 'data/graph.html', {'regn': bank, 'key': key})
+    regn = get_key(get_dict(), bank)
+    file_name = os.path.join(key + '_' + str(regn) + '.png')
+    if get_graph(bank, key):
+        return render(request, 'data/graph.html', {'key': key, 'bank': str(bank), 'file_name': file_name})
+    else:
+        return render(request, 'data/bank_not_found.html', {'bank': str(bank), 'file_name': file_name})
 
 
 def search_bank(request):
     try:
         bank_name = banks.objects.get(name=request.GET['bank_name'])
         if (request.method == "GET") and ('bank_name' in request.GET) and (request.GET['bank_name'] == bank_name.name):
+            forms.objects.get_or_create(data=bank_name.name)
             return render(request, 'data/second_main.html', {'bank': str(request.GET['bank_name'])})
     except Exception:
         return render(request, 'data/bank_not_found.html', {'bank': request.GET['bank_name']})
