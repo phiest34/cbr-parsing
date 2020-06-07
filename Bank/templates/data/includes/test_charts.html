@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Парсинг центробанка</title>
+
+    <!-- If you are using downloaded FusionCharts libraries, uncomment the below code   -->
+    <!--
+
+	{% load static %}
+   	<script type="text/javascript" src="{% static "Bank/fusioncharts.js" %}"></script>
+   	<script type="text/javascript" src="{% static "Bank/themes/fusioncharts.theme.fusion.js" %}"></script>
+
+-->
+
+    <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+
+</head>
+<body>
+<div id="chart-1">{{ output|safe }}</div>
+</body>
+</html>
