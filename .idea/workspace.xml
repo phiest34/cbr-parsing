@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67e2d1df-c5cc-4d06-941c-cff946ebb26e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/djangoInterface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoInterface.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/scripts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/scripts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/templates/data/bank_not_found.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/bank_not_found.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/templates/data/graph.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/graph.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/templates/data/includes/chose_bank.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/includes/chose_bank.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/templates/data/includes/chose_column.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/includes/chose_column.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/templates/data/second_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/second_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoInterface/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoInterface/settings.py" afterDir="false" />
     </list>
@@ -76,15 +74,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\djangoInterface\Bank\templates\data\includes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\djangoInterface\Bank\templates" />
+      <recent name="E:\djangoInterface\Work\Graphics" />
       <recent name="E:\djangoInterface\Bank\templates\data" />
       <recent name="E:\djangoInterface\Bank\templates\data\includes" />
-      <recent name="E:\djangoInterface\Bank\templates" />
       <recent name="E:\djangoInterface\Bank\templates\includes" />
-      <recent name="E:\djangoInterface\Bank" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\djangoInterface\Bank\templates\data\includes" />
     </key>
   </component>
   <component name="RunManager">
@@ -180,7 +178,8 @@
       <workItem from="1591183780609" duration="6071000" />
       <workItem from="1591426818468" duration="24585000" />
       <workItem from="1591459667162" duration="46000" />
-      <workItem from="1591459727247" duration="10648000" />
+      <workItem from="1591459727247" duration="18906000" />
+      <workItem from="1591521894094" duration="695000" />
     </task>
     <task id="LOCAL-00001" summary="started to make load function">
       <created>1590841316794</created>
@@ -266,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591444006673</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="almost added graphics">
+      <created>1591471444706</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1591471444706</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +286,8 @@
     <MESSAGE value="fixed after motya's razjob" />
     <MESSAGE value="added utills.py started making graph drawing" />
     <MESSAGE value="fixed charts" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed charts" />
+    <MESSAGE value="almost added graphics" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost added graphics" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -303,44 +310,44 @@
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="2437" y="249" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1590247928061" />
-    <state x="328" y="0" width="1010" height="810" key="CommitChangelistDialog2" timestamp="1591444003682">
+    <state x="328" y="0" width="1010" height="810" key="CommitChangelistDialog2" timestamp="1591471440808">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591444003682" />
+    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591471440808" />
     <state x="2313" y="7" width="1010" height="810" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591196007008" />
-    <state x="-388" y="148" key="DiffContextDialog" timestamp="1591383082462">
+    <state x="185" y="50" key="DiffContextDialog" timestamp="1591471414567">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="-388" y="148" key="DiffContextDialog/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591383082462" />
+    <state x="185" y="50" key="DiffContextDialog/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591471414567" />
     <state x="2299" y="122" key="DiffContextDialog/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591124960528" />
     <state x="2425" y="101" key="FileChooserDialogImpl" timestamp="1591124819832">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="2425" y="101" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591124819832" />
     <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585058700864" />
-    <state width="1237" height="306" key="GridCell.Tab.0.bottom" timestamp="1591467169737">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="146" key="GridCell.Tab.0.bottom" timestamp="1591481350573">
+      <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1237" height="306" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591467169737" />
-    <state width="1493" height="85" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591457357249" />
+    <state width="1237" height="116" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591472698681" />
+    <state width="1493" height="146" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591481350573" />
     <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1237" height="306" key="GridCell.Tab.0.center" timestamp="1591467169737">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="146" key="GridCell.Tab.0.center" timestamp="1591481350573">
+      <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1237" height="306" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591467169737" />
-    <state width="1493" height="85" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591457357249" />
+    <state width="1237" height="116" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591472698681" />
+    <state width="1493" height="146" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591481350573" />
     <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1237" height="306" key="GridCell.Tab.0.left" timestamp="1591467169737">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="146" key="GridCell.Tab.0.left" timestamp="1591481350573">
+      <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1237" height="306" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591467169737" />
-    <state width="1493" height="85" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591457357248" />
+    <state width="1237" height="116" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591472698681" />
+    <state width="1493" height="146" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591481350573" />
     <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1237" height="306" key="GridCell.Tab.0.right" timestamp="1591467169737">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="146" key="GridCell.Tab.0.right" timestamp="1591481350573">
+      <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1237" height="306" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591467169737" />
-    <state width="1493" height="85" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591457357249" />
+    <state width="1237" height="116" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591472698681" />
+    <state width="1493" height="146" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591481350573" />
     <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
     <state width="1492" height="265" key="GridCell.Tab.1.bottom" timestamp="1590246704680">
       <screen x="1920" y="0" width="1536" height="824" />
@@ -374,16 +381,16 @@
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="2197" y="55" key="SettingsEditor/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591124379252" />
-    <state x="301" y="120" key="Vcs.Push.Dialog.v2" timestamp="1591444010131">
+    <state x="301" y="120" key="Vcs.Push.Dialog.v2" timestamp="1591471449579">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="301" y="120" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591444010131" />
+    <state x="301" y="120" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591471449579" />
     <state x="2281" y="145" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591196024840" />
-    <state x="388" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1591459666806">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2386" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591521988667">
+      <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="388" y="195" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591459666806" />
-    <state x="2386" y="236" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591183809602" />
+    <state x="2386" y="236" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591521988667" />
     <state x="388" y="195" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1590909432803" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584437161266" />
     <state x="630" y="75" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1591383092224">

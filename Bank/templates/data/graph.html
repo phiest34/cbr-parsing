@@ -1,6 +1,7 @@
 {% extends "data/index.html" %}
+{% load static %}
 {% block content %}
-    {% load static %}
+
     <form action="{% url 'graph' %}" method="GET">
         {% csrf_token %}
         <div class="col-sm-auto">

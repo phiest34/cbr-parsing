@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'Bank',
 ]
 
+STATICFILES_FINDERS = ["django.contrib.staticfiles.finders.FileSystemFinder",
+                       "django.contrib.staticfiles.finders.AppDirectoriesFinder"]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -116,8 +119,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+STATIC_ROOT = os.path.join(BASE_DIR, '/Bank/templates/static/')
+STATIC_URL = '/Bank/templates/static/'
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 50000000
 DATA_UPLOAD_MAX_MEMORY_SIZE = 100000000
-
-STATIC_URL = os.path.join(BASE_DIR, '/Work/Graphics/')

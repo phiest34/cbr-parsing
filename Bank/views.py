@@ -17,7 +17,7 @@ def graph(request):
     col = request.GET['col']
     key = get_key(decoding, col)
     regn = get_key(get_dict(), bank)
-    file_name = os.path.join(key + '_' + str(regn) + '.png')
+    file_name = key + '_' + str(regn) + '.png'
     if get_graph(bank, key):
         return render(request, 'data/graph.html', {'key': key, 'bank': str(bank), 'file_name': file_name})
     else:

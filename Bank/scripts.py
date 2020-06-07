@@ -48,11 +48,11 @@ def get_graph(bank: str, col: str):
                         similar.add(record['NAME_B'].lower())
                         regns[record['NAME_B'].lower()] = record['REGN']
                         values.add(record['REGN'])
-    if len(values) == 1:
-        for m in similar:
-            regn = regns.get(m)
-    else:
-        return False
+    # if len(values) == 1:
+    #     for m in similar:
+    #         regn = regns.get(m)
+    # else:
+    #     return False
 
     bTable = {'C1_S', 'C2_S', 'C31_S', 'C32_S'}
     for file in glob.glob(extract + '*.rar'):
@@ -107,7 +107,8 @@ def get_graph(bank: str, col: str):
     min_sl = min(len(x_axis), len(y_axis))
     plt.plot(x_axis[:min_sl], y_axis[:min_sl])
     plt.xlabel(bank)
-    plt.savefig(os.path.join(BASE_DIR + "/Work/Graphics/" + col + "_" + str(regn) + ".png"))
+    png = os.path.join('E:\\djangoInterface/Bank/templates/static/' + col + "_" + str(regn) + ".png")
+    plt.savefig(png)
     plt.show()
     return True
 
