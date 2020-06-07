@@ -14,7 +14,6 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -36,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Bank',
+    'googlecharts'
 ]
 
 STATICFILES_FINDERS = ["django.contrib.staticfiles.finders.FileSystemFinder",
@@ -119,7 +119,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, '/Bank/templates/static/')
-STATIC_URL = '/Bank/templates/static/'
+STATIC_ROOT = 'Bank/static/'
+STATIC_URL = '/static/'
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 50000000
 DATA_UPLOAD_MAX_MEMORY_SIZE = 100000000

@@ -1,7 +1,6 @@
 {% extends "data/index.html" %}
-{% load static %}
 {% block content %}
-
+{% load googlecharts %}
     <form action="{% url 'graph' %}" method="GET">
         {% csrf_token %}
         <div class="col-sm-auto">
@@ -22,8 +21,7 @@
         </div>
     </form>
     <div>
+        {% include 'data/includes/test_charts.html' %}
     </div>
-    <div>
-        <img alt="The line graph" src="{% static file_name %}"/>
-    </div>
+
 {% endblock %}

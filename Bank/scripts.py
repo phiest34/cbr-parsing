@@ -1,5 +1,3 @@
-from djangoInterface.settings import BASE_DIR
-import time
 import glob
 import os
 import matplotlib.pyplot as plt
@@ -28,6 +26,7 @@ def get_graph(bank: str, col: str):
     extract = 'Bank/dbf_files/'
     x_axis = []
     y_axis = []
+    axes = []
     similar = set()
     regns = {}
     values = set()
@@ -105,12 +104,13 @@ def get_graph(bank: str, col: str):
         plt.title(col)
     plt.grid()
     min_sl = min(len(x_axis), len(y_axis))
-    plt.plot(x_axis[:min_sl], y_axis[:min_sl])
-    plt.xlabel(bank)
-    png = os.path.join('E:\\djangoInterface/Bank/templates/static/' + col + "_" + str(regn) + ".png")
-    plt.savefig(png)
-    plt.show()
-    return True
+    x_axis = x_axis[:min_sl]
+    y_axis = y_axis[:min_sl]
+    for i in range(min_sl):
+        axes.append([])
+        axes[i].append(str(x_axis[i]))
+        axes[i].append(y_axis[i])
+    return axes
 
 
 def get_dict():
