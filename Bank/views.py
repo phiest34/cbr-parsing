@@ -6,6 +6,52 @@ from Bank.models import *
 import rarfile
 import wget
 from dbfread import DBF
+from django.http import HttpResponse
+from collections import OrderedDict
+from Bank.fusioncharts import FusionCharts
+from Bank.fusioncharts import FusionTable
+from Bank.fusioncharts import TimeSeries
+import requests
+
+
+def chart(request):
+    bank = forms.objects.last().data
+    col = request.GET['col']
+    key = get_key(decoding, col)
+    data = get_graph(bank, key)
+    schema = [
+        {
+            "name": "Time",
+            "type": "date",
+            "format": "%Y-%m-%d"
+        },
+        {
+            "name": col,
+            "type": "number"
+        }
+    ]
+
+    fusionTable = FusionTable(schema, data)
+    timeSeries = TimeSeries(fusionTable)
+
+    timeSeries.AddAttribute("caption", {
+        'text': bank,
+        'type': 'area'
+    })
+
+    timeSeries.AddAttribute("yAxis", [{
+        'plot': {
+            'value': bank,
+            'type': 'area'
+        },
+        'title': 'Daily Visitors (in thousand)'
+    }])
+
+    # Create an object for the chart using the FusionCharts class constructor
+    fcChart = FusionCharts("timeseries", "ex1", 800, 600, "chart-1", "json", timeSeries)
+
+    # returning complete JavaScript and HTML code, which is used to generate chart in the browsers.
+    return render(request, 'data/graph.html', {'output': fcChart.render()})
 
 
 def index(request):
@@ -16,12 +62,8 @@ def graph(request):
     bank = forms.objects.last().data
     col = request.GET['col']
     key = get_key(decoding, col)
-    regn = get_key(get_dict(), bank)
-    file_name = key + '_' + str(regn) + '.png'
-    if get_graph(bank, key):
-        return render(request, 'data/graph.html', {'key': key, 'bank': str(bank), 'file_name': file_name})
-    else:
-        return render(request, 'data/bank_not_found.html', {'bank': str(bank), 'file_name': file_name})
+    value = get_graph(bank, key)
+    return render(request, 'data/graph.html', {'value': value})
 
 
 def search_bank(request):
