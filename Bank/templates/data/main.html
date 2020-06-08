@@ -15,10 +15,11 @@
 
 
             <div class="col-sm">
-                <div class="jumbotron mt-3">
+                <div class="jumbotron mt-auto">
                     <h3>Проверить актуальность данных.</h3>
                     <p class="lead">Данные Центробанка РФ.</p>
-                    <a href="{% url 'load' %}" class="btn btn-lg btn-primary" role="button">Обновить данные</a>
+                    <a href="{% url 'load_data' %}" class="btn btn-primary" role="button">Выгрузить данные с сайта</a>
+                    <a href="{% url 'load_base' %}" class="btn btn btn-primary" role="button">Обновить базу данных</a>
                 </div>
             </div>
         </div>
@@ -35,13 +36,13 @@
             </h1>
             <form action="{% url 'choices' %}" method="GET">
                 {% csrf_token %}
-                <select name="choices" class="custom-select mar">
+                <select name="choices" class="custom-select ">
                     <option selected="">Выберите вид</option>
                     <option>Графический</option>
                     <option>Текстовый</option>
                 </select>
 
-                <div class="mar">&NonBreakingSpace;</div>
+                <div class="space">&NonBreakingSpace;</div>
                 <div class="col-0"><input type="submit" value="Подтвердить" class="btn btn btn-secondary"></div>
             </form>
         </div>

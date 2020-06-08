@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67e2d1df-c5cc-4d06-941c-cff946ebb26e" name="Default Changelist" comment="">
+    <list default="true" id="67e2d1df-c5cc-4d06-941c-cff946ebb26e" name="Default Changelist" comment="added charts">
+      <change afterPath="$PROJECT_DIR$/Bank/templates/data/no_data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/djangoInterface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoInterface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/scripts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/scripts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/templates/data/bank_not_found.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/bank_not_found.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/templates/data/graph.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/graph.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/templates/data/includes/chose_bank.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/includes/chose_bank.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/templates/data/includes/chose_column.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/includes/chose_column.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/templates/data/includes/test_charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/includes/test_charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/templates/data/includes/text_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/includes/text_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/templates/data/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/templates/data/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/templates/data/second_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/second_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/templates/data/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/static/Bank/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,15 +85,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\djangoInterface\Bank\templates\data\includes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\djangoInterface\Bank\static\Bank" />
       <recent name="E:\djangoInterface\Bank\templates\data\includes" />
       <recent name="E:\djangoInterface\Bank" />
       <recent name="E:\djangoInterface\Bank\templates\static\Bank" />
       <recent name="E:\djangoInterface\Bank\templates" />
-      <recent name="E:\djangoInterface\Work\Graphics" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\djangoInterface\Bank\templates\data\includes" />
     </key>
   </component>
   <component name="RunManager">
@@ -172,7 +190,8 @@
       <workItem from="1591426818468" duration="24585000" />
       <workItem from="1591459667162" duration="46000" />
       <workItem from="1591459727247" duration="18906000" />
-      <workItem from="1591521894094" duration="25954000" />
+      <workItem from="1591521894094" duration="31573000" />
+      <workItem from="1591603991938" duration="13593000" />
     </task>
     <task id="LOCAL-00001" summary="started to make load function">
       <created>1590841316794</created>
@@ -286,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591561649281</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added charts">
+      <created>1591562696587</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1591562696587</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,8 +328,10 @@
     <MESSAGE value="fixed charts" />
     <MESSAGE value="almost added graphics" />
     <MESSAGE value="changed with tables by maksim" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed with tables by maksim" />
+    <MESSAGE value="added charts" />
+    <option name="LAST_COMMIT_MESSAGE" value="added charts" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#SQL_Dialects" timestamp="1585058607049">
@@ -325,44 +353,44 @@
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="2437" y="249" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1590247928061" />
-    <state x="2313" y="7" width="1010" height="810" key="CommitChangelistDialog2" timestamp="1591561645636">
+    <state x="2313" y="7" width="1010" height="810" key="CommitChangelistDialog2" timestamp="1591641282154">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591524649103" />
-    <state x="2313" y="7" width="1010" height="810" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591561645636" />
-    <state x="185" y="50" key="DiffContextDialog" timestamp="1591471414567">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2313" y="7" width="1010" height="810" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591641282154" />
+    <state x="2299" y="122" key="DiffContextDialog" timestamp="1591563093722">
+      <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="185" y="50" key="DiffContextDialog/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591471414567" />
-    <state x="2299" y="122" key="DiffContextDialog/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591124960528" />
+    <state x="2299" y="122" key="DiffContextDialog/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591563093722" />
     <state x="2425" y="101" key="FileChooserDialogImpl" timestamp="1591124819832">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="2425" y="101" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591124819832" />
     <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585058700864" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1591562287995">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1591624886399">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1237" height="133" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591532603418" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591562287995" />
+    <state width="1237" height="27" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591563918304" />
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591624886399" />
     <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1591562287995">
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1591624886399">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1237" height="133" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591532603418" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591562287995" />
+    <state width="1237" height="27" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591563918304" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591624886399" />
     <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1591562287994">
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1591624886399">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1237" height="133" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591532603418" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591562287994" />
+    <state width="1237" height="27" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591563918304" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591624886399" />
     <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1591562287995">
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1591624886399">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
-    <state width="1237" height="133" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591532603418" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591562287995" />
+    <state width="1237" height="27" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591563918304" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591624886399" />
     <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
     <state width="1492" height="265" key="GridCell.Tab.1.bottom" timestamp="1590246704680">
       <screen x="1920" y="0" width="1536" height="824" />
@@ -388,6 +416,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1585041555277" />
+    <state x="2394" y="128" key="MultipleFileMergeDialog" timestamp="1591562836010">
+      <screen x="1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="2394" y="128" key="MultipleFileMergeDialog/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591562836010" />
     <state x="494" y="63" key="RollbackChangesDialog" timestamp="1591468497448">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -396,16 +428,16 @@
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="2197" y="55" key="SettingsEditor/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591124379252" />
-    <state x="2281" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591561657730">
+    <state x="2281" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591562700610">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="301" y="120" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591524663187" />
-    <state x="2281" y="145" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591561657730" />
-    <state x="2386" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591521988667">
+    <state x="2281" y="145" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591562700610" />
+    <state x="2386" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591604001907">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="388" y="195" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591459666806" />
-    <state x="2386" y="236" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591521988667" />
+    <state x="2386" y="236" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591604001907" />
     <state x="388" y="195" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1590909432803" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584437161266" />
     <state x="630" y="75" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1591383092224">

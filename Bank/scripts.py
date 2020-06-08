@@ -47,12 +47,9 @@ def get_graph(bank: str, col: str):
                         similar.add(record['NAME_B'].lower())
                         regns[record['NAME_B'].lower()] = record['REGN']
                         values.add(record['REGN'])
-    # if len(values) == 1:
-    #     for m in similar:
-    #         regn = regns.get(m)
-    # else:
-    #     return False
-
+    if len(values) == 1:
+        for m in similar:
+            regn = regns.get(m)
     bTable = {'C1_S', 'C2_S', 'C31_S', 'C32_S'}
     for file in glob.glob(extract + '*.rar'):
         dbfs = glob.glob(file + '/*.DBF')
@@ -109,7 +106,7 @@ def get_graph(bank: str, col: str):
     for i in range(min_sl):
         axes.append([])
         axes[i].append(str(x_axis[i]))
-        axes[i].append(y_axis[i])
+        axes[i].append(y_axis[i] * 1000)
     return axes
 
 

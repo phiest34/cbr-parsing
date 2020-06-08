@@ -2,7 +2,7 @@ from django.db import models
 
 
 class banks(models.Model):
-    name = models.CharField(max_length=40, default='none')
+    name = models.CharField(max_length=40, default='none', null=True)
 
     def __str__(self):
         return self.name
