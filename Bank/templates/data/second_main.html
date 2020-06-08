@@ -10,91 +10,88 @@
 </html>
 {% extends "data/index.html" %}
 {% block content %}
+    {% load static %}
+
     <div class='container'>
         <div class="row">
 
 
-            <div class="col-sm">
-                <div class="jumbotron mt-3">
+            <div class="col-12">
+                <div class="jumbotron mt-auto">
                     <h3>Проверить актуальность данных.</h3>
                     <p class="lead">Данные Центробанка РФ.</p>
-                    <a href="{% url 'load_data' %}" class="btn btn btn-primary" role="button">Выгрузить данные с
-                        сайта</a>
+                    <a href="{% url 'load_data' %}" class="btn btn-primary" role="button">Выгрузить данные с сайта</a>
                     <a href="{% url 'load_base' %}" class="btn btn btn-primary" role="button">Обновить базу данных</a>
                 </div>
             </div>
-        </div>
-        <div class="col-5">
-            <h2>
-                <svg class="bi bi-grid-fill" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <rect width="6" height="6" x="3.5" y="8.5" rx="1"></rect>
-                    <rect width="6" height="6" x="10.5" y="8.5" rx="1"></rect>
-                    <rect width="6" height="6" x="10.5" y="1.5" rx="1"></rect>
-                    <rect width="6" height="6" x="3.5" y="1.5" rx="1"></rect>
-                </svg>
-                Вид
-            </h2>
-            <form action="{% url 'choices' %}" method="GET">
-                {% csrf_token %}
-                <select name="choices" class="custom-select ">
-                    <option selected="">Выберите вид</option>
-                    <option>Графический</option>
-                    <option>Текстовый</option>
-                </select>
 
-                <div class="space">&NonBreakingSpace;</div>
-                <div class="col-0"><input type="submit" value="Подтвердить" class="btn btn btn-secondary"></div>
-            </form>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h1 style="margin-right: 170px">
+                    <svg class="bi bi-grid-fill" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <rect width="6" height="6" x="3.5" y="8.5" rx="1"></rect>
+                        <rect width="6" height="6" x="10.5" y="8.5" rx="1"></rect>
+                        <rect width="6" height="6" x="10.5" y="1.5" rx="1"></rect>
+                        <rect width="6" height="6" x="3.5" y="1.5" rx="1"></rect>
+                    </svg>
+                    Вид
+                </h1>
+
+                <form action="{% url 'choices' %}" method="GET">
+                    {% csrf_token %}
+                    <select name="choices" class="custom-select ">
+                        <option selected="">Выберите вид</option>
+                        <option>Графический</option>
+                        <option>Текстовый</option>
+                    </select>
+                    <div class="col-0"><input style="margin-top: 20px" type="submit" value="Подтвердить"
+                                              class="btn btn btn-secondary"></div>
+                </form>
+            </div>
 
             {% if choices == 'Текстовый' %}
-                <div class="col-0" offset-0 style=”margin-left:20px">
+                <div class="col-0" offset-0 style="margin-left:20px">
                     {% include 'data/includes/text_report.html' %}
-                </div> </row>
+                </div>
             {% endif %}
             {% if choices == 'Графический' or bank != '' %}
-                <div class="space">&NonBreakingSpace;</div>
-                <row>
-                <div class="col-0" offset-0 style=”margin-left:20px">
+
+                <div class="col-6" offset-0 style="margin-left:0px">
                     {% include 'data/includes/chose_bank.html' %}
                 </div>
 
 
             {% endif %}
 
-            </row>
-            <div class="mar">&NonBreakingSpace;</div>
+
         </div>
 
 
-        <footer class="text-muted">
-            <div class="container">
-                <p class="float-right">
-
-                </p>
-
-                <br>
-                <p style="margin-left: 50%;">ИП 2020.</p></br>
-            </div>
-        </footer>
-
-
-        {#        <div  class="col-5" offset-0 style=”margin-bottom:20px;">#}
-        {#            <h1><svg class="bi bi-graph-up" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor"#}
-        {#                     xmlns="http://www.w3.org/2000/svg">#}
-        {#                    <path d="M2 2h1v16H2V2zm1 15h15v1H3v-1z"></path>#}
-        {#                    <path fill-rule="evenodd"#}
-        {#                          d="M16.39 6.312l-4.349 5.437L9 8.707l-3.646 3.647-.708-.708L9 7.293l2.959 2.958 3.65-4.563.781.624z"#}
-        {#                          clip-rule="evenodd"></path>#}
-        {#                    <path fill-rule="evenodd"#}
-        {#                          d="M12 5.5a.5.5 0 01.5-.5h4a.5.5 0 01.5.5v4a.5.5 0 01-1 0V6h-3.5a.5.5 0 01-.5-.5z"#}
-        {#                          clip-rule="evenodd"></path>#}
-        {#                </svg> Графический отчет</h1>#}
-        {#             <input class="form-control form-control-dark w-100" type="text" placeholder="Введите название" aria-label="Search">#}
-        {#                 <div class="mar">&NonBreakingSpace;</div>#}
-        {#            <a class="btn btn-outline-secondary" href="#">Построить график</a>#}
-        {#        </div>#}
-
-
     </div>
+    <div class="container">
+        <div class="row">
+            <div style="margin-top:40px" class="col-12">
+
+                {% if bank != '' %}
+
+                    {% include 'data/includes/chose_column.html' %}
+
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 100px" class="text-muted">
+        <div class="container">
+            <p class="float-right">
+
+            </p>
+
+
+        </div>
+    </footer>
+    <p style="margin-left: 50%;">ИП 2020.</p>
 {% endblock %}

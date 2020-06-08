@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67e2d1df-c5cc-4d06-941c-cff946ebb26e" name="Default Changelist" comment="added charts">
-      <change afterPath="$PROJECT_DIR$/Bank/templates/data/no_data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/djangoInterface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoInterface.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="67e2d1df-c5cc-4d06-941c-cff946ebb26e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/scripts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/scripts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/templates/data/bank_not_found.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/bank_not_found.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank/static/Bank/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/static/Bank/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/templates/data/graph.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/graph.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/templates/data/includes/chose_bank.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/includes/chose_bank.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/templates/data/includes/chose_column.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/includes/chose_column.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/templates/data/includes/test_charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/includes/test_charts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/templates/data/includes/text_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/includes/text_report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/templates/data/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/templates/data/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/templates/data/second_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/templates/data/second_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/templates/data/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/static/Bank/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +180,7 @@
       <workItem from="1591459667162" duration="46000" />
       <workItem from="1591459727247" duration="18906000" />
       <workItem from="1591521894094" duration="31573000" />
-      <workItem from="1591603991938" duration="13593000" />
+      <workItem from="1591603991938" duration="24704000" />
     </task>
     <task id="LOCAL-00001" summary="started to make load function">
       <created>1590841316794</created>
@@ -312,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591562696587</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fixed charts">
+      <created>1591641290328</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1591641290328</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,11 +321,11 @@
     <MESSAGE value="added trash files" />
     <MESSAGE value="fixed after motya's razjob" />
     <MESSAGE value="added utills.py started making graph drawing" />
-    <MESSAGE value="fixed charts" />
     <MESSAGE value="almost added graphics" />
     <MESSAGE value="changed with tables by maksim" />
     <MESSAGE value="added charts" />
-    <option name="LAST_COMMIT_MESSAGE" value="added charts" />
+    <MESSAGE value="fixed charts" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed charts" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
@@ -368,29 +364,29 @@
     </state>
     <state x="2425" y="101" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591124819832" />
     <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585058700864" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1591624886399">
+    <state width="1493" height="73" key="GridCell.Tab.0.bottom" timestamp="1591643072037">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="27" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591563918304" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591624886399" />
+    <state width="1493" height="73" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591643072037" />
     <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1591624886399">
+    <state width="1493" height="73" key="GridCell.Tab.0.center" timestamp="1591643072037">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="27" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591563918304" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591624886399" />
+    <state width="1493" height="73" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591643072037" />
     <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1591624886399">
+    <state width="1493" height="73" key="GridCell.Tab.0.left" timestamp="1591643072037">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="27" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591563918304" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591624886399" />
+    <state width="1493" height="73" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591643072037" />
     <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1591624886399">
+    <state width="1493" height="73" key="GridCell.Tab.0.right" timestamp="1591643072037">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="27" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591563918304" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591624886399" />
+    <state width="1493" height="73" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591643072037" />
     <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
     <state width="1492" height="265" key="GridCell.Tab.1.bottom" timestamp="1590246704680">
       <screen x="1920" y="0" width="1536" height="824" />
@@ -428,11 +424,11 @@
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="2197" y="55" key="SettingsEditor/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591124379252" />
-    <state x="2281" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591562700610">
+    <state x="2281" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591641296405">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="301" y="120" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591524663187" />
-    <state x="2281" y="145" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591562700610" />
+    <state x="2281" y="145" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591641296405" />
     <state x="2386" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591604001907">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
@@ -448,10 +444,10 @@
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="2498" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591553571139" />
-    <state x="359" y="120" width="672" height="560" key="search.everywhere.popup" timestamp="1591467337930">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2351" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591647583985">
+      <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="359" y="120" width="672" height="560" key="search.everywhere.popup/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591467337930" />
-    <state x="2351" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1590232629819" />
+    <state x="2351" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591647583985" />
   </component>
 </project>

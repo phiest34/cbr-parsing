@@ -10,6 +10,8 @@
 </html>
 {% extends "data/index.html" %}
 {% block content %}
+    {% load static %}
+
     <div class='container'>
         <div class="row">
 
@@ -23,8 +25,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-5">
-            <h1>
+        <div class="col-6">
+            <h1 style="margin-right: 170px">
                 <svg class="bi bi-grid-fill" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor"
                      xmlns="http://www.w3.org/2000/svg">
                     <rect width="6" height="6" x="3.5" y="8.5" rx="1"></rect>
@@ -42,21 +44,22 @@
                     <option>Текстовый</option>
                 </select>
 
-                <div class="space">&NonBreakingSpace;</div>
-                <div class="col-0"><input type="submit" value="Подтвердить" class="btn btn btn-secondary"></div>
+                <div class="col-0"><input style="margin-top: 20px" type="submit" value="Подтвердить"
+                                          class="btn btn btn-secondary"></div>
             </form>
         </div>
-
-
-        <footer class="text-muted">
+        <link rel="stylesheet" href="{% static "Bank/awesomplete.css" %}"/>
+        <script src="{% static "Bank/awesomplete.js" %}" async></script>
+        <footer style="margin-top: 100px" class="text-muted">
             <div class="container">
                 <p class="float-right">
 
                 </p>
-                <br>
-                <p style="margin-left: 50%;">ИП 2020.</p></br>
+
+
             </div>
         </footer>
+        <p style="margin-left: 50%;">ИП 2020.</p>
 
 
         {#        <div  class="col-5" offset-0 style=”margin-bottom:20px;">#}

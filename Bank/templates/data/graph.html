@@ -1,6 +1,5 @@
 {% extends "data/index.html" %}
 {% block content %}
-{% load googlecharts %}
     <form action="{% url 'graph' %}" method="GET">
         {% csrf_token %}
         <div class="col-sm-auto">
@@ -16,8 +15,8 @@
             </select>
 
 
-            <div class="space">&NonBreakingSpace;</div>
-            <div class="col-0"><input type="submit" value="Построить" class="btn btn btn-secondary"></div>
+            <div class="col-0"><input type="submit" style="margin-top: 2%" value="Построить"
+                                      class="btn btn btn-secondary"></div>
         </div>
     </form>
     <div>
