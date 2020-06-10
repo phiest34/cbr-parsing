@@ -1,15 +1,13 @@
 from django.db import models
 
 
-class banks(models.Model):
-    name = models.CharField(max_length=40, default='none', null=True)
-
-    def __str__(self):
-        return self.name
-
-
 class forms(models.Model):
     data = models.CharField(max_length=40, default='None', null=True)
+
+
+class banks(models.Model):
+    REGN = models.CharField(max_length=4, default='None', primary_key=True)
+    name = models.CharField(max_length=60, default='none')
 
 
 class banks_d(models.Model):

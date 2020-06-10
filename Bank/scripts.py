@@ -1,7 +1,7 @@
-import glob
-import os
 import matplotlib.pyplot as plt
 from dbfread import DBF
+import glob
+from Bank.models import banks
 
 decoding = {'000': 'Суммарный капитал', 'C1_S': 'Объем акций отчужденных по сделкам',
             'C2_S': 'Объем акций приобретенных по сделкам',
@@ -34,7 +34,7 @@ def get_graph(bank: str, col: str):
     bank.lower()
     regns.clear()
     values.clear()
-    regn = get_key(get_dict(), bank)
+    regn = get_regn(bank)
     for file in glob.glob(extract + '*.rar'):
         dbfs = glob.glob(file + '/*.DBF')
         for dbf in dbfs:
@@ -103,6 +103,10 @@ def get_graph(bank: str, col: str):
     min_sl = min(len(x_axis), len(y_axis))
     x_axis = x_axis[:min_sl]
     y_axis = y_axis[:min_sl]
+    plt.plot(x_axis, y_axis)
+    plt.xlabel(bank)
+    plt.savefig('Work/Graphics/' + col + '_' + str(regn))
+
     for i in range(min_sl):
         axes.append([])
         axes[i].append(str(x_axis[i]))
@@ -110,14 +114,14 @@ def get_graph(bank: str, col: str):
     return axes
 
 
-def get_dict():
-    extract = 'Bank/dbf_files/'
-    dick = {}
-    for file in glob.glob(extract + '*.rar'):
-        dbfs = glob.glob(file + '/*.DBF')
-        for dbf in dbfs:
-            if dbf[-5] == 'B':
-                table = DBF(dbf, encoding='cp866', load=True)
-                for record in table:
-                    dick[record['REGN']] = record['NAME_B']
-    return dick
+def get_banks():
+    bank_string = ''
+    for record in banks.objects.all():
+        bank_string += str(record.name) + ', '
+    bank_string = bank_string[:-2]
+    return bank_string
+
+
+def get_regn(bank: str):
+    for record in banks.objects.filter(name=bank):
+        return str(record.REGN)
