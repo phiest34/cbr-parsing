@@ -50,7 +50,7 @@
                 </form>
             </div>
 
-            {% if choices == 'Текстовый' or text_choices != '' %}
+             {% if choices == 'Текстовый' or text_choices == 'Все банки за месяц' or text_choices == 'Один банк за год' %}
                 <div class="col-6">
                     {% include 'data/includes/chose_column_text.html' %}
                 </div>
