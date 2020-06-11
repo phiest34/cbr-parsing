@@ -1,0 +1,22 @@
+<h1>
+    <svg class="bi bi-document-text" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor"
+         xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+              d="M6 3h8a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2zm0 1a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1V5a1 1 0 00-1-1H6z"
+              clip-rule="evenodd"></path>
+        <path fill-rule="evenodd"
+              d="M6.5 14a.5.5 0 01.5-.5h3a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5z"
+              clip-rule="evenodd"></path>
+    </svg>
+    Все банки за один месяц
+</h1>
+<form action="{% url 'report_by_date' %}" method="GET">
+    <select class="custom-select" name="date">
+        <option selected="">Выберите дату</option>
+        {% for month in months %}
+            <option>{{ month }}</option>
+        {% endfor %}
+    </select>
+    <div class="col-0"><input style="margin-top: 5%; margin-left: 30%" type="submit" value="Подтвердить"
+                              class="btn btn btn-secondary"></div>
+</form>

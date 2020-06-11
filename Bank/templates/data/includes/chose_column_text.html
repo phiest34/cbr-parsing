@@ -8,16 +8,17 @@
               d="M6.5 14a.5.5 0 01.5-.5h3a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5z"
               clip-rule="evenodd"></path>
     </svg>
-    Текстовый отчет
+    Отчетность
 </h1>
-<form method="get">
-    <input class="form-control form-control-dark w-100" type="text" name="month_name" id="name"
-           placeholder="Введите месяц"
-           aria-label="Search">
-    <div class="space">&NonBreakingSpace;</div>
-    <div class="row">
-        <div class="col-sm cell1"><input type="submit" value="Получить отчет"
-                                         class="btn btn-outline-secondary" href="#"></div>
-    </div>
-    </div>
+
+</form>
+<form action="{% url 'text_choices' %}" method="GET">
+    {% csrf_token %}
+    <select name="text_choices" class="custom-select ">
+        <option selected="">Выберите вид</option>
+        <option>Все банки за месяц</option>
+        <option>Один банк за год</option>
+    </select>
+    <div class="col-0"><input style="margin-top: 5%; margin-left: 45%" type="submit" value="Подтвердить"
+                              class="btn btn btn-secondary"></div>
 </form>

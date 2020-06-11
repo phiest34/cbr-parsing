@@ -1,0 +1,26 @@
+<form action="{% url 'report_by_bank' %}" method="GET">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "Bank/awesomplete.css" %}"/>
+    <script src="{% static "Bank/awesomplete.js" %}" async></script>
+    <div class="form-group">
+        <div class="col-12"><h2>Название банка</h2></div>
+        <input class="awesomplete form-control custom-control" data-list='{{ bank_list }}' style="width: 200%"
+               name="bank" type="text"
+               placeholder="Введите название банка"
+               aria-label="Search"/>
+    </div>
+    <div class="form-group"><h2>Год</h2>
+
+        <select type="text" style="width: 58.5%" class="custom-select" id="exampleInputPassword1" name="year">
+            <option selected="">Выбиретие год</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+        </select>
+    </div>
+    <input type="submit" class="btn btn btn-secondary" value="Подтвердить">
+</form>

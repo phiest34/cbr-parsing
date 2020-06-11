@@ -1,12 +1,16 @@
+import os
 import matplotlib.pyplot as plt
-from dbfread import DBF
 import glob
-from Bank.models import banks
+from Bank.models import *
+from Bank.do_not_open import decoding
+import pandas as pd
+from dbfread import DBF
+from djangoInterface.settings import BASE_DIR
 
-decoding = {'000': 'Суммарный капитал', 'C1_S': 'Объем акций отчужденных по сделкам',
-            'C2_S': 'Объем акций приобретенных по сделкам',
-            'C31_S': 'Финансовый результат по операциям, реализованный, тыс.руб', 'C32_S':
-                'Финансовый результат по операциям, нереализованный, тыс.руб'}
+import datetime
+from datetime import timedelta
+
+extract = 'Bank/dbf_files/'
 
 
 def formatting(month):
@@ -23,7 +27,6 @@ def get_key(dic, value):
 
 
 def get_graph(bank: str, col: str):
-    extract = 'Bank/dbf_files/'
     x_axis = []
     y_axis = []
     axes = []
@@ -105,7 +108,7 @@ def get_graph(bank: str, col: str):
     y_axis = y_axis[:min_sl]
     plt.plot(x_axis, y_axis)
     plt.xlabel(bank)
-    plt.savefig('Work/Graphics/' + col + '_' + str(regn))
+    plt.savefig('Work/Graphics/' + col + '_' + str(regn) + '.png')
 
     for i in range(min_sl):
         axes.append([])
@@ -124,4 +127,78 @@ def get_banks():
 
 def get_regn(bank: str):
     for record in banks.objects.filter(name=bank):
-        return str(record.REGN)
+        return int(record.REGN)
+
+
+def month_report(date: str):
+    cols = ['Название']
+    df1 = pd.DataFrame(columns=['Расшифровка'])
+    for record in banks_n.objects.filter(DT=date):
+        cols.append(record.C1)
+        df1.loc[record.C1, 'Расшифровка'] = record.C2_1 + record.C2_2 + record.C2_3
+    df = pd.DataFrame(columns=cols)
+    regns = set()
+    for record in banks_d.objects.filter(DT=date):
+        df.loc[record.REGN, record.C1] = record.C3
+        regns.add(record.REGN)
+    for record in regns:
+        for rec in banks.objects.filter(REGN=record):
+            df.loc[record, 'Название'] = rec.name
+    path = 'Work/Output/' + date + '.xlsx'
+    print(path)
+    print(BASE_DIR)
+    writer = pd.ExcelWriter(path)
+    df.to_excel(writer, 'Banks')
+    df1.to_excel(writer, 'Features')
+    writer.save()
+
+
+def get_months():
+    months = []
+    for file in os.listdir(extract):
+        year = file[4:8]
+        month = file[8:10]
+        day = '01'
+        months.append(year + '-' + month + '-' + day)
+    return months
+
+
+def bank_report(bank_name: str, year: int):
+    regn = '0'
+    for record in banks.objects.filter(name=bank_name):
+        regn = record.REGN
+    report_ld = datetime.datetime(year=year, month=12, day=1)
+    report_fd = datetime.datetime(year=year, month=1, day=1)
+
+    Data = []
+    while report_ld - report_fd > timedelta(hours=1):
+
+        df = pd.DataFrame(columns=['Наименование', 'Остаток'])
+        report_fd += timedelta(days=28)
+        date = str(report_fd.year) + '-' + formatting(report_fd.month) + '-01'
+        name = ''
+        for record in banks_d.objects.filter(DT=date, REGN=regn):
+            if record.C3 != '0':
+                for names in banks_n.objects.filter(DT=date, C1=record.C1):
+                    name = names.C2_1 + names.C2_2 + names.C2_3
+                df.loc[record.C1, 'Остаток'] = record.C3
+                df.loc[record.C1, 'Наименование'] = name
+        Data.append(df)
+
+    path = 'Work/Output/' + str(regn) + '_' + str(year) + '.xlsx'
+    print(path)
+    print(BASE_DIR)
+    writer = pd.ExcelWriter(path)
+    month = 0
+    flag = False
+    for i in Data:
+        if len(i) > 0:
+            flag = True
+    if flag:
+        for n, df in enumerate(Data):
+            month += 1
+            if len(df) == 0:
+                continue
+            df.to_excel(writer, '%s' % month)
+        writer.save()
+    return flag

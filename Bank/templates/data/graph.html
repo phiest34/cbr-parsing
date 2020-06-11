@@ -6,12 +6,9 @@
 
             <select name="col" class="custom-select ">
                 <option selected="">Выберите показатель</option>
-                <option>Суммарный капитал</option>
-                <option>Объем акций отчужденных по сделкам</option>
-                <option>Объем акций приобретенных по сделкам</option>
-                <option>Финансовый результат по операциям, реализованный, тыс.руб</option>
-                <option>Финансовый результат по операциям, нереализованный, тыс.руб</option>
-
+                {% for column in col_list %}
+                    <option>{{ column }}</option>
+                {% endfor %}
             </select>
 
 

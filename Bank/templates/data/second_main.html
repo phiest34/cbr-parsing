@@ -50,14 +50,14 @@
                 </form>
             </div>
 
-            {% if choices == 'Текстовый' %}
-                <div class="col-0" offset-0 style="margin-left:20px">
-                    {% include 'data/includes/text_report.html' %}
+            {% if choices == 'Текстовый' or text_choices != '' %}
+                <div class="col-6">
+                    {% include 'data/includes/chose_column_text.html' %}
                 </div>
             {% endif %}
             {% if choices == 'Графический' or bank != '' %}
 
-                <div class="col-6" offset-0 style="margin-left:0px">
+                <div class="col-6">
                     {% include 'data/includes/chose_bank.html' %}
                 </div>
 
@@ -78,7 +78,12 @@
                     {% include 'data/includes/chose_column.html' %}
 
                 {% endif %}
-
+                {% if text_choices == 'Один банк за год' %}
+                    {% include 'data/includes/text_report_by_bank.html' %}
+                {% endif %}
+                {% if text_choices == 'Все банки за месяц' %}
+                    {% include 'data/includes/text_report_by_date.html' %}
+                {% endif %}
             </div>
         </div>
     </div>
