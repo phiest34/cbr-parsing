@@ -5,7 +5,7 @@ from io import StringIO
 from enum import Enum
 
 
-# Common base class for FC
+# Common base class for chart
 class FusionCharts:
     baseTemplate = """
         <script type="text/javascript">
@@ -44,7 +44,7 @@ class FusionCharts:
         self.constructorOptions[messageName] = messageValue
 
     # render the chart created
-    # It prints a script and calls the FusionCharts javascript render method of created chart   
+    # It prints a script and calls the FusionCharts javascript render method of created chart
     def render(self):
 
         # Serialize constructorOptions to a JSON formatted

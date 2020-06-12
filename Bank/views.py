@@ -12,6 +12,11 @@ import os
 
 
 def chart(request):
+    """
+        Цель: вывести график на страницу
+        Вход: request
+        Выход: рендер шаблона 'data/graph.html', словарь с данными для графика и списком всех показателей
+        """
     bank = forms.objects.last().data
     col = request.GET['col']
     key = get_key(decoding, col)
@@ -45,10 +50,18 @@ def chart(request):
 
 
 def index(request):
+    """
+    Выход: рендер шаблона 'data/main.html'
+           """
     return render(request, 'data/main.html')
 
 
 def search_bank(request):
+    """
+            Цель: вывести график на страницу
+            Вход: request
+            Выход: рендер шаблона 'data/graph.html', словарь с данными для графика и списком всех показателей
+    """
     try:
         bank_name = banks.objects.get(name=request.GET['bank_name'])
         if (request.method == "GET") and ('bank_name' in request.GET) and (request.GET['bank_name'] == bank_name.name):
@@ -60,12 +73,21 @@ def search_bank(request):
 
 
 def choice(request):
+    """
+            Вход: request
+            Выход: рендер шаблона 'data/second_main.html', словарь с выбранным типом отчета и список банков
+            """
     results = request.GET["choices"]
     bank_list = get_banks
     return render(request, 'data/second_main.html', {'choices': results, 'bank': '', 'bank_list': bank_list})
 
 
 def load_data(request):
+    """
+            Цель: загрузить данные с сайта на устройство
+            Вход: request
+            Выход: рендер шаблона 'data/main.html'
+            """
     print("load data")
     report = datetime.datetime(year=2014, month=1, day=1)
     current_date = datetime.datetime.now()
@@ -116,6 +138,11 @@ def load_data(request):
 
 
 def load_base(request):
+    """
+            Цель: Положить все данные в базу
+            Вход: request
+            Выход: рендер шаблона 'data/main.html'
+            """
     print("load base")
     extract = 'Bank/dbf_files/'
     for file in glob.glob(extract + '*.rar'):
@@ -175,12 +202,22 @@ def load_base(request):
 
 
 def report_by_date(request):
+    """
+            Цель: создать таблицу xls с отчетностью
+            Вход: request
+            Выход: рендер шаблона 'data/main.html'
+            """
     date = request.GET['date']
     month_report(date)
     return render(request, 'data/main.html')
 
 
 def text_choice(request):
+    """
+            Вход: request
+            Выход: рендер шаблона 'data/second_main.html', словарь с данными с выбранном типом отчета, списком месяцев и
+            списком банков
+            """
     results = request.GET["text_choices"]
     months = get_months()
     bank_list = get_banks
@@ -189,6 +226,10 @@ def text_choice(request):
 
 
 def report_by_bank(request):
+    """
+               Вход: request
+               Выход: рендер шаблона 'data/main.html
+               """
     bank = request.GET["bank"]
     year = int(request.GET["year"])
     if bank_report(bank, year):
