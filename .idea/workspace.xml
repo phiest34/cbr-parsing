@@ -2,37 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67e2d1df-c5cc-4d06-941c-cff946ebb26e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bank/fusioncharts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/fusioncharts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/scripts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/scripts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bank/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/000_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/000_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/000_1623.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/000_1623.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/000_2272.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/000_2272.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/000_2867.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/000_2867.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/000_650.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/000_650.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/100.2.1.1_1481.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/100.2.1.1_1481.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/100.5.1в_1481.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/100.5.1в_1481.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/100.5_1043.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/100.5_1043.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/100.6.2.1_3098.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/100.6.2.1_3098.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/203_2942.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/203_2942.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/C1_S_1000.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/C1_S_1000.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/C1_S_101.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/C1_S_101.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/C1_S_1481.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/C1_S_1481.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/C2_S_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/C2_S_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/C2_S_1000.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/C2_S_1000.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/C2_S_101.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/C2_S_101.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/C2_S_354.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/C2_S_354.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/C31_S_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/C31_S_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/C31_S_101.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/C31_S_101.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Graphics/C32_S_101.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphics/C32_S_101.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Output/1003_2014.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Output/1003_2014.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Output/1137_2014.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Output/1137_2014.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Output/1481_2014.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Output/1481_2014.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Output/2014-02-01.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Output/2014-02-01.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Work/Output/2020-05-01.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Output/2020-05-01.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -411,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591910751354</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="fixed reports by maksim; added docstrings">
+      <created>1591969187667</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1591969187667</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +412,8 @@
     <MESSAGE value="new load functions by maksim228" />
     <MESSAGE value="text reports by bank and by month by maksim 312491941" />
     <MESSAGE value="fixed menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed menu" />
+    <MESSAGE value="fixed reports by maksim; added docstrings" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed reports by maksim; added docstrings" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
@@ -456,11 +437,11 @@
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="2437" y="249" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1590247928061" />
-    <state x="2313" y="7" width="1010" height="810" key="CommitChangelistDialog2" timestamp="1591910749776">
+    <state x="2313" y="7" width="1010" height="810" key="CommitChangelistDialog2" timestamp="1591969183281">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="328" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591885177816" />
-    <state x="2313" y="7" width="1010" height="810" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591910749776" />
+    <state x="2313" y="7" width="1010" height="810" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591969183281" />
     <state x="2299" y="122" key="DiffContextDialog" timestamp="1591563093722">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
@@ -471,29 +452,29 @@
     </state>
     <state x="2425" y="101" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591968508043" />
     <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585058700864" />
-    <state width="1493" height="272" key="GridCell.Tab.0.bottom" timestamp="1591969160195">
+    <state width="1493" height="272" key="GridCell.Tab.0.bottom" timestamp="1591977609864">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state width="1222" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591885323095" />
-    <state width="1493" height="272" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591969160195" />
+    <state width="1493" height="272" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591977609864" />
     <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1493" height="272" key="GridCell.Tab.0.center" timestamp="1591969160195">
+    <state width="1493" height="272" key="GridCell.Tab.0.center" timestamp="1591977609864">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state width="1222" height="2" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591885323095" />
-    <state width="1493" height="272" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591969160195" />
+    <state width="1493" height="272" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591977609864" />
     <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1493" height="272" key="GridCell.Tab.0.left" timestamp="1591969160195">
+    <state width="1493" height="272" key="GridCell.Tab.0.left" timestamp="1591977609864">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state width="1222" height="2" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591885323095" />
-    <state width="1493" height="272" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591969160195" />
+    <state width="1493" height="272" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591977609864" />
     <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
-    <state width="1493" height="272" key="GridCell.Tab.0.right" timestamp="1591969160195">
+    <state width="1493" height="272" key="GridCell.Tab.0.right" timestamp="1591977609864">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state width="1222" height="2" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591885323095" />
-    <state width="1493" height="272" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591969160195" />
+    <state width="1493" height="272" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591977609864" />
     <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585058420298" />
     <state width="1492" height="265" key="GridCell.Tab.1.bottom" timestamp="1590246704680">
       <screen x="1920" y="0" width="1536" height="824" />
@@ -532,11 +513,11 @@
     </state>
     <state x="231" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591888606805" />
     <state x="2197" y="55" key="SettingsEditor/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591906348319" />
-    <state x="2281" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591910754497">
+    <state x="2281" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591969192585">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="301" y="120" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1591885186124" />
-    <state x="2281" y="145" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591910754497" />
+    <state x="2281" y="145" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591969192585" />
     <state x="2386" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591911625690">
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
@@ -563,6 +544,6 @@
     <state x="2351" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1536.824@1920.0.1536.824" timestamp="1591968221297" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Work$docstring_extractor.coverage" NAME="docstring_extractor Coverage Results" MODIFIED="1591968647911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../downloads" />
+    <SUITE FILE_PATH="coverage/Work$docstring_extractor.coverage" NAME="docstring_extractor Coverage Results" MODIFIED="1591977609857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../downloads" />
   </component>
 </project>

@@ -13,6 +13,7 @@ import os
 
 def chart(request):
     """
+        Автор: Молдатаев Нурсултан
         Цель: вывести график на страницу
         Вход: request
         Выход: рендер шаблона 'data/graph.html', словарь с данными для графика и списком всех показателей
@@ -51,6 +52,8 @@ def chart(request):
 
 def index(request):
     """
+    Автор: Молдатаев Нурсултан
+    Цель: отобразить стартовую страницу проекта
     Выход: рендер шаблона 'data/main.html'
            """
     return render(request, 'data/main.html')
@@ -58,6 +61,7 @@ def index(request):
 
 def search_bank(request):
     """
+            Автор: Селин Максим
             Цель: вывести график на страницу
             Вход: request
             Выход: рендер шаблона 'data/graph.html', словарь с данными для графика и списком всех показателей
@@ -74,6 +78,8 @@ def search_bank(request):
 
 def choice(request):
     """
+            Автор: Молдатаев Нурсултан
+            Цель: передать значение выбора пользователя по виду отчета.
             Вход: request
             Выход: рендер шаблона 'data/second_main.html', словарь с выбранным типом отчета и список банков
             """
@@ -84,6 +90,7 @@ def choice(request):
 
 def load_data(request):
     """
+            Автор: Селин Максим
             Цель: загрузить данные с сайта на устройство
             Вход: request
             Выход: рендер шаблона 'data/main.html'
@@ -139,6 +146,7 @@ def load_data(request):
 
 def load_base(request):
     """
+            Автор: Селин Максим
             Цель: Положить все данные в базу
             Вход: request
             Выход: рендер шаблона 'data/main.html'
@@ -203,6 +211,7 @@ def load_base(request):
 
 def report_by_date(request):
     """
+            Автор: Селин Максим
             Цель: создать таблицу xls с отчетностью
             Вход: request
             Выход: рендер шаблона 'data/main.html'
@@ -214,6 +223,8 @@ def report_by_date(request):
 
 def text_choice(request):
     """
+            Автор: Молдатаев Нурсултан
+            Цель: передать значение выбранного параметра
             Вход: request
             Выход: рендер шаблона 'data/second_main.html', словарь с данными с выбранном типом отчета, списком месяцев и
             списком банков
@@ -227,6 +238,8 @@ def text_choice(request):
 
 def report_by_bank(request):
     """
+               Автор: Молдатаев Нурсултан
+               Цель: отобразить текстовый отчет по одному банку
                Вход: request
                Выход: рендер шаблона 'data/main.html
                """
